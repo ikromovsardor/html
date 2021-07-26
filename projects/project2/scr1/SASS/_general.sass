@@ -1,0 +1,428 @@
+
+$maincolor:red
+$second-color:green
+@mixin btn_hover
+  &:hover
+    background-image: none
+    background-color: $second-color
+*
+  font-family: Serif
+  box-sizing: border-box
+header
+  position: relative
+nav
+  height: 50px
+  background-color: #212121
+.menu
+  display: flex
+  justify-content: space-between
+  padding: 13px 0
+  margin: 0
+  list-style: none
+  &_link
+    color: white
+    font-size: 15px
+    font-weight: 700
+    text-decoration: none
+  &_item
+    border-right: 2px dotted black
+    padding-right: 60px
+    &:nth-child(6)
+      border-right: 0
+.hamburger
+  position: absolute
+  display: none
+  top: 50%
+  right: 10px
+  cursor: pointer
+  width: 20px
+  transform: translateY(-50%)
+  span
+    display: block
+    width: 100%
+    height: 2px
+    background-color: aqua
+    color: brown
+    margin-top: 2px
+    transition: 1s all
+.hamburger_active
+  span
+    position: absolute
+    right: 0
+    cursor: pointer
+    &:nth-child(1)
+      transition: 1s
+      transform: translateY(3px) rotate(126deg)
+    &:nth-child(2)
+      display: none
+    &:nth-child(3)
+      transition: 1s
+      transform: translateY(3px) rotate(50deg)
+.subheader
+  position: absolute
+  width: 100%
+  height: 84px
+  background-color: rgba(0, 0, 0, 0.6)
+  &_logo
+    display: block
+    max-width: 100%
+    margin-top: 6px
+    img
+      display: block
+      margin: 0 auto
+      width: 115px
+  &_official
+    color: white
+    opacity: 0.5
+    text-align: center
+    font-size: 13px
+    font-weight: 700
+  &_phone
+    display: block
+    color: white
+    font-size: 22px
+    text-transform: capitalize
+    text-align: right
+  &_cell
+    display: block
+    margin-top: 19px
+    color: white
+    font-size: 22px
+    text-transform: capitalize
+    text-align: right
+  &_btn
+    width: 150px
+    height: 40px
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+    border: 3px solid rgba(0, 0, 0, 0.27)
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+    color: white
+    text-transform: capitalize
+    font-size: 14px
+    margin-top: 19px
+    border-radius: 4px
+    @include btn_hover
+.promo
+  min-height: 800px
+  background: url("../img/lion-king-spiritual-dark-fantasy-1n.jpg") center (center / cover) no-repeat
+  padding: 150px 0 135px 0
+  &_header
+    color: #e7ff00
+    font-size: 40px
+    font-weight: 700
+    text-transform: capitalize
+  &_subheader
+    font-size: 36px
+    color: #ff0000
+    font-weight: 700
+    margin-top: 22px
+  &_descr
+    color: white
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    text-align: center
+  &_btn
+    display: block
+    margin: 118px auto 0 auto
+    width: 150px
+    height: 40px
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+    border: 3px solid rgba(0, 0, 0, 0.27)
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+    @include btn_hover
+.cards_section .container
+  display: flex
+  .icons
+    display: flex
+    flex-wrap: wrap
+    padding: 148px 0 20px 0
+    .col-md-4
+      display: flex
+    p
+      margin-left: 30px
+      border: 1px solid
+      text-align: center
+      border-radius: 15px
+.game_section
+  .container
+    &_info
+      display: flex
+      justify-content: center
+      border: 1px solid
+      width: 260px
+      margin: 0 auto
+      background-color: chartreuse
+    &_infos
+      text-align: center
+    .basic_info
+      .game
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        padding: 99px 0 20px 0
+      .games
+        p
+          z-index: 2
+        &:nth-child(1)
+          background: url("https://i.pinimg.com/736x/d9/d3/6f/d9d36f393a6d6b0d5c4a71e622966e65.jpg") center (center / cover) no-repeat
+          width: 290px
+          height: 200px
+          margin: 15px
+          border: 1px solid
+  .games
+    border: 1px solid
+    width: 330px
+    height: 250px
+    border-radius: 20px
+    margin: 5px
+.mobile
+  min-height: 864px
+  padding: 40px 0 70px 0
+  background: url("../img/lion-king-spiritual-dark-fantasy-1n.jpg") center (center/cover) no-repeat
+  &_label
+    margin: 0 auto
+    height: 24px
+    width: 112px
+    padding: 5px 12px
+    background-color: #000000
+    color: #ffffff
+    font-size: 11px
+    font-weight: 300
+    text-transform: capitalize
+    text-align: center
+  &_title
+    margin-bottom: 0
+    margin-top: 38px
+    color: #222222
+    font-size: 38px
+    font-weight: 700
+    text-transform: capitalize
+    text-align: center
+  &_subtitle
+    font-family: Roboto
+    font-style: normal
+    font-weight: 300
+    font-size: 12px
+    line-height: 14px
+    text-align: center
+  .row
+    margin-top: 32px
+  &_item
+    position: relative
+    width: 320px
+    height: 280px
+    opacity: 0.8
+    margin: 0 auto
+    &_1
+      background: url("../img/lion-king-spiritual-dark-fantasy-1n.jpg") center (center/cover) no-repeat
+    &_2
+      background: url("../img/lion-king-spiritual-dark-fantasy-1n.jpg") center (center/cover) no-repeat
+    &_3
+      background: url("../img/64bcb3f41cffe31871987e01d160c495.png") center (center/cover) no-repeat
+    &_4
+      background: url("../img/Снимок экрана (8).png") center (center/cover) no-repeat
+    &_5
+      background: url("../img/64bcb3f41cffe31871987e01d160c495.png") center (center/cover) no-repeat
+    &_6
+      background: url("../img/10976858.jpg") center (center/cover) no-repeat
+    &_subtitle
+      color: white
+      font-family: fantasy
+      font-size: 24px
+      font-weight: 400
+      line-height: 31px
+      text-transform: capitalize
+      text-align: center
+    &_plus
+      position: relative
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      bottom: 35px
+      left: 50%
+      transform: translate(-50%)
+      width: 26px
+      height: 26px
+      background-color: black
+      margin: 0 auto
+      color: white
+      border-radius: 100%
+      padding: 6px
+      cursor: pointer
+      &:before
+        content: ""
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $maincolor
+        transition: 0.3s all
+      &:after
+        position: absolute
+        left: 50%
+        transform: translate(-50%)
+        content: ""
+        display: block
+        width: 2px
+        height: 14px
+        background-color: $maincolor
+        transition: 0.3s all
+      &:hover
+        &:before , &:after
+          background-color: $second-color
+.drive
+  background: black url("../img/Подложка.png") bottom no-repeat
+  min-height: 884px
+  padding: 128px 0 79px 0
+  &_text
+    margin: 0 auto
+    height: 24px
+    width: 112px
+    font-size: 11px
+    font-weight: 300
+    text-transform: capitalize
+    text-align: center
+    border: 1px solid
+    color: white
+  &_text2
+    font-style: normal
+    font-size: 38px
+    text-align: center
+    text-transform: uppercase
+    color: white
+  &_text3
+    font-size: 17px
+    text-align: center
+    color: white
+  &_img img
+    display: block
+    margin: 0 auto
+  &_car_text
+    font-size: 17px
+    text-align: center
+.requair
+  padding: 68px 0 84px 0
+  &_block
+    margin: 33px 0
+    &_nmb
+      margin-bottom: 0
+  &_title
+    color: #1ca8c3
+    font-size: 22px
+    font-weight: 400
+  &_list
+    list-style: none
+    padding-left: 50px
+    li
+      font-size: 17px
+      position: relative
+      font-weight: 300
+      line-height: 24px
+      margin-top: 22px
+      margin-bottom: 10px
+      &:before
+        content: ""
+        display: block
+        position: absolute
+        left: -32px
+        top: 3%
+        width: 21px
+        height: 20px
+        background: url("../img/check_blue 5.png") center center/cover no-repeat
+  &_descr
+    margin-top: 25px
+    font-size: 17px
+    font-weight: 300
+    line-height: 24px
+    color: #1ca8c3
+  .warning
+    .requair_title
+      color: $second-color
+    .requair_list
+      li
+        &:before
+          content: ""
+          display: block
+          position: absolute
+          left: -32px
+          top: 3%
+          width: 21px
+          height: 20px
+          background: url("../img/check_red 3.png") center center/cover no-repeat
+.label
+  margin: 0 auto
+  height: 24px
+  width: 112px
+  padding: 5px 12px
+  background-color: #000000
+  color: #ffffff
+  font-size: 11px
+  font-weight: 300
+  text-transform: capitalize
+  text-align: center
+.title
+  margin-bottom: 0
+  margin-top: 38px
+  color: #222222
+  font-size: 38px
+  font-weight: 700
+  text-transform: capitalize
+  text-align: center
+.global
+  background: url("../img/world_bg.png")
+  position: relative
+  height: 720px
+  &_text
+    font-size: 11px
+    line-height: 11px
+    text-align: center
+    background-color: white
+    text-transform: uppercase
+    width: 140px
+    display: block
+    margin: 0 auto
+  &_title
+    color: white
+    font-size: 38px
+    text-align: center
+  &_label
+    text-align: center
+    font-size: 17px
+    color: white
+  &_link
+    position: absolute
+    bottom: 0
+    left: 50%
+.footer
+  .footers
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 155px
+  hr
+    display: block
+    margin: 0 auto
+    margin-top: 27px
+    width: 301px
+    height: 7px
+    background: #1FBAD6
+  &_img
+    display: flex
+    width: 290px
+    justify-content: space-evenly
+  &_img img
+    display: flex
+    width: 23px
+  &_text
+    display: flex
+    justify-content: space-around
+    width: 427px
+  &_text2
+    display: flex
+    justify-content: space-around
+    font-size: 11px
+  &_link
+    text-align: center
+.xs-visible
+  display: none

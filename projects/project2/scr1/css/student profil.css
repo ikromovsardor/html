@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.basic_div{
+    padding: 25px;
+}
+.student_profil{
+    margin:  0 auto;
+    transition-duration: 1s;
+    background-color: #cacaca;
+    height: 600px;
+    width: 400px;
+    border-radius: 27px;
+    box-shadow: 0 0 0 9px #e1e1e1;
+}
+.student_profil:hover{
+     height: 700px;
+}
+.student_profil img{
+   height: 150px;
+    border-radius: 80px;
+    display: block;
+    margin: 0 auto;
+    background-color: #0de559;
+}
+.student_profil h1 {
+    text-align: center;
+    padding: 17px;
+}
+.student_profil table tr td{
+    border: 1px solid;
+}
+.student_profil .main_infos table{
+    display: flex;
+    justify-content: center;
+}
+hr{
+    background: linear-gradient(93deg, #00ff5a, #00000094);
+    height: 5px;
+    margin: 20px 0 0 0;
+}
+.hello table{
+    display: none;
+    transition-duration: 3s;
+}
+table tr th {
+    border: 1px solid;
+}
+.student_profil:hover .hello table{
+    display: flex;
+    justify-content: center;
+    transition-duration: 1s;
+}
+.icon{
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon img{
+    width: 40px;
+    background: none;
+}

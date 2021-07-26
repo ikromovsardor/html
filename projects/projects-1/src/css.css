@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.promo{
+    background:url("https://jdmhobby.ru/_sh/7/758_2.jpg") center center/cover no-repeat;
+    height: 740px;
+}
+.container {
+    margin: 0 auto;
+    width: 1120px;
+}
+.promo_logo img{
+    display: block;
+    margin: 0 auto;
+}
+.promo_logo-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.simple{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 41px;
+    line-height: 41px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F9BF3B;
+}
+.big_title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+.title{
+    font-size: 21px;
+    text-align: center;
+    margin-top: 10px;
+}
+.title span{
+    color: red;
+    text-shadow: -1px 1px black;
+ }
+.promo_btn{
+    width: 150px;-->
+   display: block;
+    margin: 0 auto;
+   text-align: center;
+   line-height: 40px;
+    height: 40px;
+    background: linear-gradient(81deg, #00ff08, #000000ab);
+   cursor: pointer;
+    margin-top: 20px;
+}
+ .promo_logo_img{
+    display: block;
+    margin: 0 auto;
+    padding: 80px 0 10px 0;
+ }
+.promo_finish img{
+    width: 16px;
+}
+.promo_finish{
+     text-align: center;
+     margin-top: 25px;
+}
+.basic{
+    margin: 76px;
+}
+.basic_text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.basic_title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.waiting_title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #299CBD;
+}
+.waiting_text{
+    font-family: Roboto;
+    background: url("https://images.drive.ru/i/0/5e184bdcec05c41179000117.jpg") center center/cover no-repeat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    width: 1232px;
+    line-height: 27px;
+    text-align: center;
+    color: #4A4A4A;
+
+}
+.finish{
+    margin-top:154px ;
+    background-color: #8a7474;
+    height: 200px;
+}
+.finish_text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #EFEFEF;
+}
+.footer_img img{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+.footer_title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+    color: #252525;
+}
+.footer_btn{
+      width: 150px;
+   display: block;
+    margin: 0 auto;
+   text-align: center;
+   line-height: 40px;
+    height: 40px;
+    background: linear-gradient(81deg, #00ff08, #000000ab);
+   cursor: pointer;
+    margin-top: 20px;
+}
+.finish_footer{
+    margin-top: 190px;
+}
+.finishfooter_img img{
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+.finishfooter_text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #252525;
+}
+.finishfooter_title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+     color: #299CBD;
+}
+.finishfooter_label{
+    font-family: Roboto;
+    font-size: 23px;
+    text-align: center;
+    color: #4A4A4A;
+}
+.footer1{
+    background-color: black;
+    height: 100px;
+}
+.footer1_text{
+    color: white;
+    text-decoration-line: underline;
+    text-align: center;
+}
+.footer1_text span{
+    color: red;
+    text-decoration-line: none;
+}

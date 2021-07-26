@@ -1,0 +1,75 @@
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+body
+  background-image: url("../lesson/img/wall.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+.promo
+  position: relative
+  &_div
+    border-radius: 5px
+    background-color: rgb(255 255 255 / 23%)
+    box-shadow: -1px -1px 7px 4px white
+    backdrop-filter: blur(2px)
+    position: absolute
+    left: 3%
+    top: 47px
+    height: 542px
+    width: 1277px
+  &_hr1
+    width: 220px
+    position: absolute
+    top: 185px
+    right: 0
+  &_hr2
+    width: 220px
+    position: absolute
+    top: 185px
+  &_logo
+    img
+      width: 70px
+      display: block
+      margin: 0 auto
+  &_logo_text
+      text-align: center
+      font-size: 10px
+  &_simple
+    text-align: center
+    color: blue
+    line-height: 53px
+    font-size: 25px
+  &_big_title
+    text-align: center
+    font-size: 37px
+    color: chartreuse
+  &_title
+    text-align: center
+    margin-top: 20px
+    font-size: 24px
+    color: aqua
+  &_btn
+    width: 110px
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 36px
+    margin: 0 auto
+    margin-top: 20px
+    background: linear-gradient(177deg, #040202, transparent)
+    border-radius: 4px
+    box-shadow: 7px 6px 4px 1px
+    cursor: pointer
+    &:active
+      transform: scale(0.8)
+      box-shadow: 0 0 0 0
+      background: linear-gradient(176deg, #0aff31, #000000e8)
+  &_finish
+    text-align: center
+    margin-top: 59px
+    font-size: 22px
+    img
+      display: block
+      margin: 0 auto
+      width: 28px
