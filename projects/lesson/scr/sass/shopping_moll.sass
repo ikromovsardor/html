@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Pacifico&display=swap')
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+header
+  nav
+    height: 63px
+    background: linear-gradient(79deg, #00eaff, #00ffae91)
+    position: relative
+    box-shadow: inset -20px 0px 20px 0px
+  .basic
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    height: 60px
+    li
+      color: #00d0ff
+      list-style: none
+    li:before
+      content: ""
+      position: absolute
+      width: 20px
+      height: 20px
+
+    li:nth-child(1)
+      &:before
+        background-image: url("../icon/home-solid.svg")
+        left: 23%
+    li:nth-child(2)
+      &:before
+        background-image: url("../icon/apple-alt-solid.svg")
+        left: 39%
+        width: 18px
+    li:nth-child(3)
+      &:before
+        background-image: url("../icon/shirtsinbulk-brands.svg ")
+        left: 56%
+    li:nth-child(4)
+      &:before
+        background-image: url("../icon/sign-in-alt-solid.svg")
+        right: 26%
+.promo
+  background: url("../img/shopping.jpg")center center/cover no-repeat
+  height: 800px
+  &_div
+    border-radius: 5px
+    background-color: rgb(255 255 255 / 23%)
+    box-shadow: -4px -1px 7px 6px #00d0d8
+    backdrop-filter: blur(2px)
+    position: relative
+    top: 52px
+    height: 650px
+  &_logo
+    img
+      width: 146px
+      margin: 0 auto
+      display: block
+    &_text
+      font-size: 13px
+      text-align: center
+      text-shadow: 0 1px #00ffe0
+      cursor: pointer
+  &_title
+    text-align: center
+    font-size: 30px
+    color: darkturquoise
+    text-shadow: 5px 4px black
+    cursor: pointer
+    font-family: "Pacifico"
+  &_simple
+    font-family: 'Pacifico', cursive
+    font-size: 20px
+    text-align: center
+  &_big
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 198px
+  &_big_title
+    text-align: center
+    background-color: #0000005c
+    backdrop-filter: blur(1px)
+    width: 357px
+    border-radius: 19px
+    font-family: cursive
+    box-shadow: 0 0 4px 7px
+  &_btn
+    display: flex
+    width: 150px
+    height: 40px
+    background-color: #0d6efd
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+    border-radius: 10px
+    box-shadow: 10px 11px 3px 0
+    cursor: pointer
+    text-shadow: 0 1px #1cffc4
+    text-transform: uppercase
+    &:focus
+      outline: none
+    &:active
+      box-shadow: 0 0 0 0
+      transform: scale(0.8)
