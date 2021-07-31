@@ -16,7 +16,7 @@ body {
 .promo_div {
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.23);
-  box-shadow: -1px -1px 7px 4px white;
+  box-shadow: 0 0 7px 4px white;
   backdrop-filter: blur(2px);
   position: absolute;
   left: 3%;
