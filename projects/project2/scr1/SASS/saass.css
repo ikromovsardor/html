@@ -1292,6 +1292,117 @@ nav {
     width: 105px;
     height: 28px;
   }
+
+  .cards_section .icons {
+    display: flex;
+    justify-content: center;
+  }
+  .cards_section .icons p {
+    font-size: 9px;
+    height: 89px;
+    width: 185px;
+  }
+
+  .mobile_label {
+    width: 88px;
+    height: 16px;
+    font-size: 6px;
+  }
+  .mobile_title {
+    margin-top: 1px;
+    font-size: 16px;
+  }
+  .mobile_subtitle {
+    font-size: 11px;
+  }
+  .mobile_item {
+    width: 146px;
+    height: 109px;
+  }
+  .mobile_item_subtitle {
+    font-size: 11px;
+  }
+  .mobile_item_plus {
+    width: 18px;
+    height: 16px;
+  }
+
+  .drive_text {
+    height: 13px;
+    width: 82px;
+    font-size: 8px;
+  }
+  .drive_text2 {
+    font-size: 12px;
+  }
+  .drive_text3 {
+    font-size: 10px;
+  }
+  .drive_img img {
+    margin: 117px auto;
+    width: 559px;
+  }
+  .drive_car_text {
+    font-size: 10px;
+  }
+
+  .requair .label {
+    width: 81px;
+    height: 12px;
+    font-size: 5px;
+  }
+  .requair .title {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  .requair_title {
+    font-size: 13px;
+  }
+  .requair_list li {
+    font-size: 11px;
+  }
+  .requair_list li:before {
+    width: 12px;
+    height: 12px;
+  }
+  .requair_descr {
+    font-size: 10px;
+  }
+  .requair .warning .requair_list li:before {
+    width: 12px;
+    height: 12px;
+  }
+
+  .global_text {
+    font-size: 8px;
+    width: 97px;
+    font-weight: 900;
+  }
+  .global_title {
+    font-size: 16px;
+  }
+  .global_label {
+    font-size: 10px;
+  }
+
+  .footer_img img {
+    width: 14px;
+  }
+  .footer_text {
+    font-size: 10px;
+  }
+  .footer_text2 {
+    font-size: 8px;
+    font-weight: 900;
+  }
+  .footer_imgs img {
+    width: 169px;
+    height: 15px;
+  }
+  .footer hr {
+    width: 260px;
+    height: 5px;
+  }
 }
 @media (max-width: 575px) {
   header {
@@ -1300,6 +1411,11 @@ nav {
 
   nav {
     height: 30px;
+  }
+
+  .hamburger span {
+    width: 26px;
+    height: 2px;
   }
 
   .subheader {
@@ -1333,20 +1449,38 @@ nav {
     display: none;
   }
   .promo_header {
-    font-size: 30px;
     padding: 0 24px;
     line-height: 35px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
   }
   .promo_subheader {
-    font-size: 20px;
-    margin-top: 33px;
+    font-size: 17px;
+    margin-top: 3px;
     padding: 0 10px;
+    display: none;
     line-height: 30px;
   }
   .promo_btn {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
     width: 210px;
     height: 50px;
-    margin-top: 72px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    border: 3px solid rgba(0, 0, 0, 0.07);
+    box-shadow: inset 0px -4px 0px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
   }
 
   .menu {
@@ -1355,16 +1489,225 @@ nav {
 
   .cards_section {
     padding: 22px 0 36px 0;
+    height: 1200px;
   }
-
-  .icons p {
-    font-size: 16px;
-    margin-top: 15px;
-    line-height: 16px;
-  }
-  .icons p_ico img {
+  .cards_section .icons {
+    display: flex;
+    justify-content: start;
     width: 100px;
     height: 100px;
+  }
+  .cards_section .icons p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    height: 149px;
+    color: #1EACC7;
+  }
+  .subheader_phone {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .subheader_phone_cell {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 110px;
+    height: 22px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    border: 3px solid rgba(0, 0, 0, 0.07);
+    box-shadow: inset 0px -3px 0px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+  .subheader_phone_logo img {
+    width: 130px;
+    height: 15px;
+  }
+
+  .drive {
+    height: 393px;
+    background: #070716;
+  }
+  .drive_img img {
+    width: 300px;
+    height: 190px;
+  }
+  .drive_car_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .drive_text {
+    width: 115px;
+    height: 26px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 11px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #070716;
+    background: #FFFFFF;
+  }
+  .drive_text2 {
+    display: none;
+  }
+  .drive_text3 {
+    display: none;
+  }
+
+  .requair_list li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #222222;
+  }
+  .requair_list li:before {
+    width: 21px;
+    height: 20px;
+  }
+  .requair .warning .requair_list li {
+    color: red;
+  }
+  .requair .warning .requair_list li:before {
+    width: 21px;
+    height: 20px;
+  }
+  .requair .label {
+    width: 135px;
+    height: 34px;
+    font-size: 11px;
+    background: #000000;
+  }
+  .requair .title {
+    font-size: 16px;
+  }
+  .requair_title {
+    font-size: 16px;
+  }
+  .requair_descr {
+    font-size: 14px;
+  }
+  .requair_descr:nth-child(2) {
+    color: red;
+  }
+
+  .global {
+    height: 360px;
+    background: url("../img/world_bg.png");
+  }
+  .global_label {
+    font-size: 14px;
+  }
+  .global_title {
+    font-size: 16px;
+  }
+  .global_text {
+    width: 126px;
+    height: 16px;
+    background: #FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #070716;
+  }
+  .global_link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1FBAD6;
+  }
+
+  .footer_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #070716;
+  }
+  .footer_text2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 11px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #999999;
+  }
+  .footer_img {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 60px;
+    left: 218px;
+  }
+  .footer_img img {
+    width: 35px;
+    height: 35px;
+  }
+  .footer_imgs {
+    position: relative;
+    top: 126px;
+    right: 345px;
+  }
+  .footer_imgs img {
+    width: 260px;
+    height: 24px;
+  }
+  .footer hr {
+    width: 255px;
+    height: 6px;
+  }
+  .footer_link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1FBAD6;
   }
 }
 

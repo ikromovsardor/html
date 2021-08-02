@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Pacifico&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap')
 *
   padding: 0
   margin: 0
@@ -27,20 +29,26 @@ header
     li:nth-child(1)
       &:before
         background-image: url("../icon/home-solid.svg")
-        left: 23%
+        left: 19%
     li:nth-child(2)
       &:before
         background-image: url("../icon/apple-alt-solid.svg")
-        left: 39%
+        left: 33%
         width: 18px
     li:nth-child(3)
       &:before
-        background-image: url("../icon/shirtsinbulk-brands.svg ")
-        left: 56%
+        background-image: url("../icon/tshirt-solid.svg")
+        left: 47%
+        width: 25px
     li:nth-child(4)
       &:before
+        background-image: url("../icon/mobile-solid.svg")
+        width: 13px
+        height: 21px
+    li:nth-child(5)
+      &:before
         background-image: url("../icon/sign-in-alt-solid.svg")
-        right: 26%
+        right: 22%
 .promo
   background: url("../img/shopping.jpg")center center/cover no-repeat
   height: 800px
@@ -104,3 +112,149 @@ header
     &:active
       box-shadow: 0 0 0 0
       transform: scale(0.8)
+.promo_section
+  padding: 80px 0 0 0
+  .basic_products
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+  .basic_title
+    font-family: 'Lobster', cursive
+    text-align: center
+    font-weight: 900
+    font-size: 25px
+    text-shadow: 2px 3px  #00d0ff
+    margin-top: 25px
+  .basic_product
+    border: 1px solid
+    width: 283px
+    margin-top: 30px
+    height: 245px
+    margin-bottom: 26px
+    border-radius: 14px
+    font-family: 'Acme', sans-serif
+    &:hover
+      box-shadow: 0 0 10px 5px
+      transition: 1s all
+    img
+      display: block
+      width: 114px
+      height: 113px
+      margin: 0 auto
+      border: 1px solid
+      border-radius: 88px
+      margin-top: 5px
+    table
+      display: flex
+      align-items: center
+      justify-content: center
+      height: 83px
+      tr th
+        border: 1px solid
+        text-align: center
+.mobile
+  &_title
+    font-family: 'Acme', sans-serif
+    text-align: center
+    font-weight: 900
+    font-size: 25px
+    text-shadow: 2px 3px  #00d0ff
+    margin-top: 25px
+  &_clothes
+    display: flex
+    justify-content: space-evenly
+  &_left
+    display: flex
+    align-items: center
+    height: 287px
+    cursor: pointer
+    img
+      width: 40px
+  &_right
+    display: flex
+    align-items: center
+    height: 287px
+    cursor: pointer
+    img
+      width: 40px
+  &_clothes2
+    display: none
+  &_clo
+    border: 1px solid
+    width: 283px
+    margin-top: 30px
+    height: 245px
+    margin-bottom: 26px
+    border-radius: 14px
+    transition: 1s all
+    background-color: #0d6efd
+    background: linear-gradient(36deg, black, transparent)
+    background-color: #00ff0885
+    img
+      display: block
+      margin: 0 auto
+      border: 1px solid
+      border-radius: 87px
+  .mobile_clothes:nth-child(2)
+    background: linear-gradient(198deg,#56ff00bd,transparent)
+    background-color: #05baff
+    img
+      display: block
+      margin: 0 auto
+      border: 1px solid
+      border-radius: 87px
+  &_simple
+    font-family: 'Acme', sans-serif
+    font-size: 25px
+    cursor: pointer
+    font-weight: 900
+  table
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 83px
+    tr th
+      border: 1px solid
+      text-align: center
+  &_btn
+    display: block
+    margin: 0 auto
+    width: 104px
+    height: 30px
+    background-color: black
+    color: #FFFFFF
+    border-radius: 10px
+    border: none
+    box-shadow: 5px 6px 1px 0
+    &:active
+      transform: scale(0.8)
+      box-shadow: 0 0 0 0
+  a
+    text-decoration: none
+.requair
+  height: 800px
+  padding-top: 30px
+  &_title
+    font-family: 'Indie Flower', cursive
+    text-shadow: 0 1px #01dcff
+    font-size: 25px
+    text-align: center
+    padding-bottom: 60px
+
+  &_basic_div
+    display: flex
+    justify-content: space-evenly
+    text-align: center
+    font-size: 22px
+    font-family: 'Indie Flower', cursive
+  &_div
+    border: 1px solid
+    height: 170px
+    width: 160px
+    border-radius: 10px
+    img
+      display: block
+      margin: 0 auto
+      width: 114px
+      height: 77px
+      margin-top: 5px
