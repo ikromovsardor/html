@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Pacifico&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Jacques+Francois+Shadow&display=swap')
 *
   padding: 0
   margin: 0
@@ -133,6 +134,52 @@ header
     margin-bottom: 26px
     border-radius: 14px
     font-family: 'Acme', sans-serif
+    &:nth-child(1)
+      background-image: url("../icon/Lettuce-Leaves.png")
+      background-size: cover
+      background-repeat: no-repeat
+    &:nth-child(2)
+      background-image: url("../icon/gosh.png")
+      background-size: cover
+      background-repeat: no-repeat
+    &:nth-child(3)
+      background-image: url("../icon/drinks-igr.png")
+      background-size: cover
+      background-repeat: no-repeat
+    &:nth-child(4)
+      background-image: url("../icon/bread.png")
+      background-size: cover
+      background-repeat: no-repeat
+    &:nth-child(5)
+      background-image: url("../icon/product-spice-caraway-whole.png")
+      background-size: cover
+      background-repeat: no-repeat
+    &:nth-child(6)
+      background-image: url("../icon/fruit.png")
+      background-size: cover
+      background-repeat: no-repeat
+    &:nth-child(7)
+      background-image: url("../icon/ice.png")
+      background-size: cover
+      background-repeat: no-repeat
+    &:nth-child(8)
+      background-image: url("../icon/images.jpg")
+      background-size: cover
+      background-repeat: no-repeat
+    &:nth-child(9)
+      background-image: url("../icon/product-spice-caraway-whole.png")
+      background-size: cover
+      background-repeat: no-repeat
+    &:hover table
+      display: flex
+      align-items: center
+      justify-content: center
+      height: 245px
+      transition: 1s all
+      border-radius: 14px
+      color: #FFFFFF
+      background-color: rgba(0, 0, 0, 0.55)
+      backdrop-filter: blur(2px)
     &:hover
       box-shadow: 0 0 10px 5px
       transition: 1s all
@@ -145,11 +192,12 @@ header
       border-radius: 88px
       margin-top: 5px
     table
-      display: flex
+      display: none
       align-items: center
       justify-content: center
       height: 83px
       tr th
+        color: white
         border: 1px solid
         text-align: center
 .mobile
@@ -240,7 +288,6 @@ header
     font-size: 25px
     text-align: center
     padding-bottom: 60px
-
   &_basic_div
     display: flex
     justify-content: space-evenly
@@ -258,3 +305,44 @@ header
       width: 114px
       height: 77px
       margin-top: 5px
+.global
+  padding-top: 150px
+  &_basic_div_items
+    padding-bottom: 110px
+  &_simple
+    background-color: #a2a2a2
+    border-radius: 10px
+    box-shadow: 0 0 204px 10px
+    cursor: pointer
+    width: 476px
+    height: 276px
+    p
+      text-align: center
+      text-shadow: 3px 1px #00fff3
+      border-bottom: 1px solid
+    h4
+      border-bottom: 1px double
+      text-align: center
+  &_items
+    &_item
+        display: flex
+        justify-content: center
+        width: 691px
+        img
+          width: 63%
+          height: 327px
+  &_label
+    cursor: pointer
+    list-style: none
+    li
+      font-family: 'Emblema One', cursive
+      font-family: 'Jacques Francois Shadow', cursive
+    span
+      color: red
+      font-weight: 900
+      font-family: 'Emblema One', cursive
+
+
+
+
+
