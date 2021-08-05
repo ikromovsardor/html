@@ -375,7 +375,7 @@ header .basic li:nth-child(5):before {
   box-shadow: 0 0 204px 10px;
   cursor: pointer;
   width: 476px;
-  height: 276px;
+  height: 340px;
 }
 .global_simple p {
   text-align: center;
@@ -407,6 +407,27 @@ header .basic li:nth-child(5):before {
   color: red;
   font-weight: 900;
   font-family: "Emblema One", cursive;
+}
+.global_btn {
+  width: 122px;
+  height: 34px;
+  box-shadow: 0 0 20px 10px #01a9ff;
+  background-color: #00f8ff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin: 0 auto;
+}
+.global_btn:hover {
+  background-color: red;
+  box-shadow: 0 0 20px 10px red;
+}
+.global_btn:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 20px 10px lawngreen;
+  background-color: lawngreen;
 }
 
 /*# sourceMappingURL=shopping_moll.css.map */
