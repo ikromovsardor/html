@@ -20,13 +20,16 @@ header
     height: 60px
     li
       color: #00d0ff
+      cursor: pointer
       list-style: none
+      a
+        text-decoration: none
+        color: #00d0ff
     li:before
       content: ""
       position: absolute
       width: 20px
       height: 20px
-
     li:nth-child(1)
       &:before
         background-image: url("../icon/home-solid.svg")
@@ -34,18 +37,19 @@ header
     li:nth-child(2)
       &:before
         background-image: url("../icon/apple-alt-solid.svg")
-        left: 33%
+        left: 32%
         width: 18px
     li:nth-child(3)
       &:before
         background-image: url("../icon/tshirt-solid.svg")
-        left: 47%
+        left: 46%
         width: 25px
     li:nth-child(4)
       &:before
         background-image: url("../icon/mobile-solid.svg")
         width: 13px
         height: 21px
+        left: 61%
     li:nth-child(5)
       &:before
         background-image: url("../icon/sign-in-alt-solid.svg")
@@ -341,6 +345,80 @@ header
       color: red
       font-weight: 900
       font-family: 'Emblema One', cursive
+.footer
+  background-color: #000000c7
+  height: 120px
+  .basic_footer
+    display: flex
+    justify-content: space-between
+  &_li1 ul
+    display: flex
+    justify-content: space-around
+    cursor: pointer
+    width: 400px
+    align-items: center
+    height: 122px
+    list-style: none
+    color: #FFFFFF
+  &_img
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    height: 122px
+    width: 120px
+    img
+      width: 35px
+      height: 35px
+
+  &_li
+    a
+      border-bottom: 2px solid white
+      width: 110px
+    ul
+      list-style: none
+      font-size: 14px
+      cursor: pointer
+      a
+        text-decoration: none
+        color: white
+      li:before
+        content: ""
+        position: absolute
+        width: 20px
+        height: 20px
+        left: 120px
+      li:nth-child(1)
+        &:before
+          background-image: url("../icon/home-solid.svg")
+        &:hover
+          color: #14c6d7
+      li:nth-child(2)
+        &:before
+          background-image: url("../icon/apple-alt-solid.svg")
+          width: 18px
+        &:hover
+          color: #14c6d7
+      li:nth-child(3)
+        &:before
+          background-image: url("../icon/tshirt-solid.svg")
+          width: 25px
+          left: 116px
+        &:hover
+          color: #14c6d7
+      li:nth-child(4)
+        &:before
+          background-image: url("../icon/mobile-solid.svg")
+          width: 13px
+          left: 122px
+          height: 21px
+        &:hover
+          color: #14c6d7
+      li:nth-child(5)
+        &:before
+          left: 118px
+          background-image: url("../icon/sign-in-alt-solid.svg")
+        &:hover
+          color: #14c6d7
 
 
 

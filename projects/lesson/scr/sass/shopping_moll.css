@@ -23,7 +23,12 @@ header .basic {
 }
 header .basic li {
   color: #00d0ff;
+  cursor: pointer;
   list-style: none;
+}
+header .basic li a {
+  text-decoration: none;
+  color: #00d0ff;
 }
 header .basic li:before {
   content: "";
@@ -37,18 +42,19 @@ header .basic li:nth-child(1):before {
 }
 header .basic li:nth-child(2):before {
   background-image: url("../icon/apple-alt-solid.svg");
-  left: 33%;
+  left: 32%;
   width: 18px;
 }
 header .basic li:nth-child(3):before {
   background-image: url("../icon/tshirt-solid.svg");
-  left: 47%;
+  left: 46%;
   width: 25px;
 }
 header .basic li:nth-child(4):before {
   background-image: url("../icon/mobile-solid.svg");
   width: 13px;
   height: 21px;
+  left: 61%;
 }
 header .basic li:nth-child(5):before {
   background-image: url("../icon/sign-in-alt-solid.svg");
@@ -407,6 +413,93 @@ header .basic li:nth-child(5):before {
   color: red;
   font-weight: 900;
   font-family: "Emblema One", cursive;
+}
+
+.footer {
+  background-color: #000000c7;
+  height: 120px;
+}
+.footer .basic_footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_li1 ul {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  width: 400px;
+  align-items: center;
+  height: 122px;
+  list-style: none;
+  color: #FFFFFF;
+}
+.footer_img {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 122px;
+  width: 120px;
+}
+.footer_img img {
+  width: 35px;
+  height: 35px;
+}
+.footer_li a {
+  border-bottom: 2px solid white;
+  width: 110px;
+}
+.footer_li ul {
+  list-style: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.footer_li ul a {
+  text-decoration: none;
+  color: white;
+}
+.footer_li ul li:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 120px;
+}
+.footer_li ul li:nth-child(1):before {
+  background-image: url("../icon/home-solid.svg");
+}
+.footer_li ul li:nth-child(1):hover {
+  color: #14c6d7;
+}
+.footer_li ul li:nth-child(2):before {
+  background-image: url("../icon/apple-alt-solid.svg");
+  width: 18px;
+}
+.footer_li ul li:nth-child(2):hover {
+  color: #14c6d7;
+}
+.footer_li ul li:nth-child(3):before {
+  background-image: url("../icon/tshirt-solid.svg");
+  width: 25px;
+  left: 116px;
+}
+.footer_li ul li:nth-child(3):hover {
+  color: #14c6d7;
+}
+.footer_li ul li:nth-child(4):before {
+  background-image: url("../icon/mobile-solid.svg");
+  width: 13px;
+  left: 122px;
+  height: 21px;
+}
+.footer_li ul li:nth-child(4):hover {
+  color: #14c6d7;
+}
+.footer_li ul li:nth-child(5):before {
+  left: 118px;
+  background-image: url("../icon/sign-in-alt-solid.svg");
+}
+.footer_li ul li:nth-child(5):hover {
+  color: #14c6d7;
 }
 
 /*# sourceMappingURL=shopping_moll.css.map */
