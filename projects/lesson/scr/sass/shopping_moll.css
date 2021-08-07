@@ -4,6 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Emblema+One&family=Jacques+Francois+Shadow&display=swap");
 * {
+  font-family: Bahnschrift;
+}
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -23,7 +27,12 @@ header .basic {
 }
 header .basic li {
   color: #00d0ff;
+  cursor: pointer;
   list-style: none;
+}
+header .basic li a {
+  text-decoration: none;
+  color: #00d0ff;
 }
 header .basic li:before {
   content: "";
@@ -37,18 +46,19 @@ header .basic li:nth-child(1):before {
 }
 header .basic li:nth-child(2):before {
   background-image: url("../icon/apple-alt-solid.svg");
-  left: 33%;
+  left: 32%;
   width: 18px;
 }
 header .basic li:nth-child(3):before {
   background-image: url("../icon/tshirt-solid.svg");
-  left: 47%;
+  left: 46%;
   width: 25px;
 }
 header .basic li:nth-child(4):before {
   background-image: url("../icon/mobile-solid.svg");
   width: 13px;
   height: 21px;
+  left: 61%;
 }
 header .basic li:nth-child(5):before {
   background-image: url("../icon/sign-in-alt-solid.svg");
@@ -428,6 +438,125 @@ header .basic li:nth-child(5):before {
   transform: scale(0.8);
   box-shadow: 0 0 20px 10px lawngreen;
   background-color: lawngreen;
+}
+
+.footer {
+  background-color: #000000c7;
+  height: 120px;
+}
+.footer .basic_footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_li1 ul {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  width: 400px;
+  align-items: center;
+  height: 122px;
+  list-style: none;
+  color: #FFFFFF;
+}
+.footer_img {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 122px;
+  width: 120px;
+}
+.footer_img img {
+  width: 35px;
+  height: 35px;
+}
+.footer_li img {
+  width: 24px;
+}
+.footer_li a {
+  border-bottom: 2px solid white;
+  width: 110px;
+}
+.footer_li ul {
+  list-style: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.footer_li ul a {
+  text-decoration: none;
+  color: white;
+}
+.footer_li ul li:nth-child(1):hover {
+  color: #14c6d7;
+}
+.footer_li ul li:nth-child(2) img {
+  width: 18px;
+}
+.footer_li ul li:nth-child(2):hover {
+  color: #14c6d7;
+}
+.footer_li ul li:nth-child(3) img {
+  width: 25px;
+}
+.footer_li ul li:nth-child(3):hover {
+  color: #14c6d7;
+}
+.footer_li ul li:nth-child(4) img {
+  width: 13px;
+  height: 21px;
+}
+.footer_li ul li:nth-child(4):hover {
+  color: #14c6d7;
+}
+.footer_li ul li:nth-child(5):hover {
+  color: #14c6d7;
+}
+
+@media only screen and (max-width: 1400px) {
+  .basic {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+  }
+  .basic li {
+    color: #00d0ff;
+    cursor: pointer;
+    list-style: none;
+  }
+  .basic li a {
+    text-decoration: none;
+    color: #00d0ff;
+  }
+  .basic li:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+  }
+  .basic li:nth-child(1):before {
+    background-image: url("../icon/home-solid.svg");
+    left: 25%;
+  }
+  .basic li:nth-child(2):before {
+    background-image: url("../icon/apple-alt-solid.svg");
+    left: 36%;
+    width: 18px;
+  }
+  .basic li:nth-child(3):before {
+    background-image: url("../icon/tshirt-solid.svg");
+    left: 48%;
+    width: 25px;
+  }
+  .basic li:nth-child(4):before {
+    background-image: url("../icon/mobile-solid.svg");
+    width: 13px;
+    height: 21px;
+    left: 59%;
+  }
+  .basic li:nth-child(5):before {
+    background-image: url("../icon/sign-in-alt-solid.svg");
+    right: 27%;
+  }
 }
 
 /*# sourceMappingURL=shopping_moll.css.map */

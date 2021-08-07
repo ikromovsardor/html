@@ -1,143 +1,206 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    body {
-        background-color: black;
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div:after {
+        content: "-salom";
+        position: relative;
+        opacity: 0;
+        top: -50px;
+        left: -30px;
+        -webkit-transition: all 0.7s;
+        transition: all 0.7s;
+        width: 100px;
+        height: 2px;
+}
+    div:hover:after {
+        opacity: 1;
+        left: 0;
+        top: 0;
     }
-    .promo {
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .lds-roller {
-      display: inline-block;
-      position: relative;
-      width: 80px;
-      height: 80px;
-    }
-    .lds-roller div {
-      animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-      transform-origin: 40px 40px;
-    }
-    .lds-roller div:after {
-      content: " ";
-      display: block;
-      position: absolute;
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: #fff;
-      margin: -4px 0 0 -4px;
-    }
-    .lds-roller div:nth-child(1) {
-      animation-delay: -0.036s;
-    }
-    .lds-roller div:nth-child(1):after {
-      top: 63px;
-      left: 63px;
-    }
-    .lds-roller div:nth-child(2) {
-      animation-delay: -0.072s;
-    }
-    .lds-roller div:nth-child(2):after {
-      top: 68px;
-      left: 56px;
-    }
-    .lds-roller div:nth-child(3) {
-      animation-delay: -0.108s;
-    }
-    .lds-roller div:nth-child(3):after {
-      top: 71px;
-      left: 48px;
-    }
-    .lds-roller div:nth-child(4) {
-      animation-delay: -0.144s;
-    }
-    .lds-roller div:nth-child(4):after {
-      top: 72px;
-      left: 40px;
-    }
-    .lds-roller div:nth-child(5) {
-      animation-delay: -0.18s;
-    }
-    .lds-roller div:nth-child(5):after {
-      top: 71px;
-      left: 32px;
-    }
-    .lds-roller div:nth-child(6) {
-      animation-delay: -0.216s;
-    }
-    .lds-roller div:nth-child(6):after {
-      top: 68px;
-      left: 24px;
-    }
-    .lds-roller div:nth-child(7) {
-      animation-delay: -0.252s;
-    }
-    .lds-roller div:nth-child(7):after {
-      top: 63px;
-      left: 17px;
-    }
-    .lds-roller div:nth-child(8) {
-      animation-delay: -0.288s;
-    }
-    .lds-roller div:nth-child(8):after {
-      top: 56px;
-      left: 12px;
-    }
-    @keyframes lds-roller {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-</style>
+
+    </style>
 </head>
 <body>
-<div class="promo">
-    <div class="lds-roller">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</div>
-
-.global
-  &_basic
-      display: flex
-      justify-content: space-evenly
-  &_basic_div
-    border: 3px solid
-    width: 237px
-    border-radius: 5px
-    height: 163px
-    background: url(../icon/plashet2.png) center center/cover no-repeat
-    background-color: #00f3ff
-    &:hover p
-     display: flex
-     transition-duration: 1s
-     height: 157px
-     background-color: rgba(0,0,0,.45)
-     backdrop-filter: blur(3px)
-
-    p
-      display: none
-      justify-content: center
-      color: #FFFFFF
-      font-family: 'Luckiest Guy', cursive
-      transition-duration: 1s
-
+<div>test</div>
 </body>
 </html>
+<!--<style>-->
+<!-- body {-->
+<!--        background-color: black;-->
+<!--    }-->
+<!--    .promo {-->
+<!--        width: 100%;-->
+<!--        height: 100%;-->
+<!--        position: fixed;-->
+<!--        display: flex;-->
+<!--        justify-content: center;-->
+<!--        align-items: center;-->
+<!--    }-->
+<!--    .lds-roller {-->
+<!--      display: inline-block;-->
+<!--      position: relative;-->
+<!--      width: 80px;-->
+<!--      height: 80px;-->
+<!--    }-->
+<!--    .lds-roller div {-->
+<!--      animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;-->
+<!--      transform-origin: 40px 40px;-->
+<!--    }-->
+<!--    .lds-roller div:after {-->
+<!--      content: " ";-->
+<!--      display: block;-->
+<!--      position: absolute;-->
+<!--      width: 7px;-->
+<!--      height: 7px;-->
+<!--      border-radius: 50%;-->
+<!--      background: #fff;-->
+<!--      margin: -4px 0 0 -4px;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(1) {-->
+<!--      animation-delay: -0.036s;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(1):after {-->
+<!--      top: 63px;-->
+<!--      left: 63px;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(2) {-->
+<!--      animation-delay: -0.072s;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(2):after {-->
+<!--      top: 68px;-->
+<!--      left: 56px;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(3) {-->
+<!--      animation-delay: -0.108s;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(3):after {-->
+<!--      top: 71px;-->
+<!--      left: 48px;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(4) {-->
+<!--      animation-delay: -0.144s;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(4):after {-->
+<!--      top: 72px;-->
+<!--      left: 40px;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(5) {-->
+<!--      animation-delay: -0.18s;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(5):after {-->
+<!--      top: 71px;-->
+<!--      left: 32px;-->
+<!--    }-->
+
+<!--   .lds-roller div:nth-child(6) {-->
+<!--      animation-delay: -0.216s;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(6):after {-->
+<!--      top: 68px;-->
+<!--      left: 24px;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(7) {-->
+<!--      animation-delay: -0.252s;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(7):after {-->
+<!--      top: 63px;-->
+<!--      left: 17px;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(8) {-->
+<!--      animation-delay: -0.288s;-->
+<!--    }-->
+<!--    .lds-roller div:nth-child(8):after {-->
+<!--      top: 56px;-->
+<!--      left: 12px;-->
+<!--    }-->
+<!--    @keyframes lds-roller {-->
+<!--      0% {-->
+<!--        transform: rotate(0deg);-->
+<!--      }-->
+<!--      100% {-->
+<!--        transform: rotate(360deg);-->
+<!--      }-->
+<!--    }-->
+<!--</style>-->
+<!--<div class="promo">-->
+<!--    <div class="lds-roller">-->
+<!--        <div></div>-->
+<!--        <div></div>-->
+<!--        <div></div>-->
+<!--        <div></div>-->
+<!--        <div></div>-->
+<!--        <div></div>-->
+<!--        <div></div>-->
+<!--        <div></div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--.global-->
+<!--  &_basic-->
+<!--      display: flex-->
+<!--      justify-content: space-evenly-->
+<!--  &_basic_div-->
+<!--    border: 3px solid-->
+<!--    width: 237px-->
+<!--    border-radius: 5px-->
+<!--    height: 163px-->
+<!--    background: url(../icon/plashet2.png) center center/cover no-repeat-->
+<!--    background-color: #00f3ff-->
+<!--    &:hover p-->
+<!--     display: flex-->
+<!--     transition-duration: 1s-->
+<!--     height: 157px-->
+<!--     background-color: rgba(0,0,0,.45)-->
+<!--     backdrop-filter: blur(3px)-->
+
+<!--    p-->
+<!--      display: none-->
+<!--      justify-content: center-->
+<!--      color: #FFFFFF-->
+<!--      font-family: 'Luckiest Guy', cursive-->
+<!--      transition-duration: 1s-->
+
+
+
+
+
+
+
+
+
+
+<!--   &:after-->
+<!--        content: ''-->
+<!--        display: block-->
+<!--        width: 0-->
+<!--        background-color: floralwhite-->
+<!--        height: 2px-->
+<!--        -webkit-transition-duration: .5s-->
+<!--        transition-duration: .5s-->
+<!--        &:hover-->
+<!--          width: 71px-->
+<!--          content: ''-->
+<!--          background-color: white-->
+<!--          display: block-->
+<!--          height: 2px-->
+<!--          -webkit-transition-duration: .1s-->
+<!--          transition-duration: .1s-->
+

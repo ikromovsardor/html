@@ -1,0 +1,42 @@
+@media only screen and (max-width: 1400px)
+  .basic
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    height: 60px
+    li
+      color: #00d0ff
+      cursor: pointer
+      list-style: none
+      a
+        text-decoration: none
+        color: #00d0ff
+    li:before
+      content: ""
+      position: absolute
+      width: 20px
+      height: 20px
+    li:nth-child(1)
+      &:before
+        background-image: url("../icon/home-solid.svg")
+        left: 25%
+    li:nth-child(2)
+      &:before
+        background-image: url("../icon/apple-alt-solid.svg")
+        left: 36%
+        width: 18px
+    li:nth-child(3)
+      &:before
+        background-image: url("../icon/tshirt-solid.svg")
+        left: 48%
+        width: 25px
+    li:nth-child(4)
+      &:before
+        background-image: url("../icon/mobile-solid.svg")
+        width: 13px
+        height: 21px
+        left: 59%
+    li:nth-child(5)
+      &:before
+        background-image: url("../icon/sign-in-alt-solid.svg")
+        right: 27%
