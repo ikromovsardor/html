@@ -37,16 +37,16 @@ body{
     transform: scale(0.8);
 
 }
+.basic_input_label{
+    display: flex;
+    justify-content: center;
+}
 .basic_input input:focus {
     outline: none;
 }
-.basic_input_label{
-    position: relative;
-}
 .basic_input input[type=checkbox]{
-    position: absolute;
-    left: 50%;
     width: 24px;
+    margin:0 ;
     transform: rotate(0deg);
 }
 .basic_input input[type=checkbox]:hover{
@@ -54,14 +54,11 @@ body{
     transition-duration: 1s;
 }
 .basic_input_label label{
-    position: absolute;
-    left: 16%;
-    margin-top: 38px;
+    margin-top: 12px;
 }
 .basic_input button{
-    position: absolute;
-    top: 70%;
-    left: 47%;
+   display: block;
+    margin: 0 auto;
     width: 120px;
     height: 30px;
     border-radius: 35px;

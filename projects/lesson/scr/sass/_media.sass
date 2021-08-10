@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1400px)
+@media  (max-width: 1200px)
   .basic
     display: flex
     justify-content: space-evenly
@@ -7,6 +7,7 @@
     li
       color: #00d0ff
       cursor: pointer
+      font-size: 15px
       list-style: none
       a
         text-decoration: none
@@ -14,29 +15,28 @@
     li:before
       content: ""
       position: absolute
-      width: 20px
-      height: 20px
     li:nth-child(1)
       &:before
-        background-image: url("../icon/home-solid.svg")
         left: 25%
+        width: 15px
+        height: 14px
     li:nth-child(2)
       &:before
-        background-image: url("../icon/apple-alt-solid.svg")
         left: 36%
-        width: 18px
+        width: 11px
+        height: 12px
     li:nth-child(3)
       &:before
-        background-image: url("../icon/tshirt-solid.svg")
         left: 48%
-        width: 25px
+        width: 15px
+        height: 14px
     li:nth-child(4)
       &:before
-        background-image: url("../icon/mobile-solid.svg")
-        width: 13px
-        height: 21px
+        width: 9px
+        height: 14px
         left: 59%
     li:nth-child(5)
       &:before
-        background-image: url("../icon/sign-in-alt-solid.svg")
         right: 27%
+        width: 15px
+        height: 14px
