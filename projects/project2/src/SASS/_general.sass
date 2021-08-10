@@ -45,19 +45,19 @@ nav
     color: brown
     margin-top: 2px
     transition: 1s all
-.hamburger_active
-  span
-    position: absolute
-    right: 0
-    cursor: pointer
-    &:nth-child(1)
-      transition: 1s
-      transform: translateY(3px) rotate(126deg)
-    &:nth-child(2)
-      display: none
-    &:nth-child(3)
-      transition: 1s
-      transform: translateY(3px) rotate(50deg)
+    &:active
+      span
+        position: absolute
+        right: 0
+        cursor: pointer
+        &:nth-child(1)
+          transition: 1s
+          transform: translateY(3px) rotate(126deg)
+        &:nth-child(2)
+          display: none
+        &:nth-child(3)
+          transition: 1s
+          transform: translateY(3px) rotate(50deg)
 .subheader
   position: absolute
   width: 100%

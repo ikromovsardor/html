@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1400px)
+@media  (max-width: 991px)
   .basic
     display: flex
     justify-content: space-evenly
@@ -11,32 +11,56 @@
       a
         text-decoration: none
         color: #00d0ff
-    li:before
-      content: ""
-      position: absolute
-      width: 20px
-      height: 20px
-    li:nth-child(1)
-      &:before
-        background-image: url("../icon/home-solid.svg")
-        left: 25%
-    li:nth-child(2)
-      &:before
-        background-image: url("../icon/apple-alt-solid.svg")
-        left: 36%
-        width: 18px
-    li:nth-child(3)
-      &:before
-        background-image: url("../icon/tshirt-solid.svg")
-        left: 48%
+        padding: 5px
+        font-size: 16px
+      img
+        width: 19px
+        height: 18px
+  .promo
+    &_div
+      height: 550px
+    &_logo
+      img
+        width: 117px
+      &_text
+        font-size: 11px
+    &_title
+      font-size: 22px
+    &_simple
+      font-size: 18px
+    &_big_title
+      width: 334px
+      height: 149px
+  .mobile
+    &_clo
+      width: 259px
+      height: 234px
+    &_simple
+      font-size: 22px
+    &_left
+      img
         width: 25px
-    li:nth-child(4)
-      &:before
-        background-image: url("../icon/mobile-solid.svg")
-        width: 13px
-        height: 21px
-        left: 59%
-    li:nth-child(5)
-      &:before
-        background-image: url("../icon/sign-in-alt-solid.svg")
-        right: 27%
+    &_rigt
+      img
+        width: 25px
+  .promo_section
+    .basic_product
+      width: 259px
+      height: 234px
+      &:hover table
+        height: 80px
+        border-radius: 0
+        border-top-right-radius: 14px
+        border-top-left-radius: 14px
+  .global
+    &_items
+      &_item
+        img
+          width: 51%
+          height: 271px
+    &_simple
+      width: 432px
+      height: 327px
+    &_btn
+      width: 116px
+      height: 34px

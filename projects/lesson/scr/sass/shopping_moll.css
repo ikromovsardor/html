@@ -33,36 +33,11 @@ header .basic li {
 header .basic li a {
   text-decoration: none;
   color: #00d0ff;
+  padding: 5px;
 }
-header .basic li:before {
-  content: "";
-  position: absolute;
+header .basic li img {
   width: 20px;
   height: 20px;
-}
-header .basic li:nth-child(1):before {
-  background-image: url("../icon/home-solid.svg");
-  left: 19%;
-}
-header .basic li:nth-child(2):before {
-  background-image: url("../icon/apple-alt-solid.svg");
-  left: 32%;
-  width: 18px;
-}
-header .basic li:nth-child(3):before {
-  background-image: url("../icon/tshirt-solid.svg");
-  left: 46%;
-  width: 25px;
-}
-header .basic li:nth-child(4):before {
-  background-image: url("../icon/mobile-solid.svg");
-  width: 13px;
-  height: 21px;
-  left: 61%;
-}
-header .basic li:nth-child(5):before {
-  background-image: url("../icon/sign-in-alt-solid.svg");
-  right: 22%;
 }
 
 .promo {
@@ -442,7 +417,6 @@ header .basic li:nth-child(5):before {
 
 .footer {
   background-color: #000000c7;
-  height: 120px;
 }
 .footer .basic_footer {
   display: flex;
@@ -511,7 +485,7 @@ header .basic li:nth-child(5):before {
   color: #14c6d7;
 }
 
-@media only screen and (max-width: 1400px) {
+@media (max-width: 991px) {
   .basic {
     display: flex;
     justify-content: space-evenly;
@@ -526,36 +500,70 @@ header .basic li:nth-child(5):before {
   .basic li a {
     text-decoration: none;
     color: #00d0ff;
+    padding: 5px;
+    font-size: 16px;
   }
-  .basic li:before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
+  .basic li img {
+    width: 19px;
+    height: 18px;
   }
-  .basic li:nth-child(1):before {
-    background-image: url("../icon/home-solid.svg");
-    left: 25%;
+
+  .promo_div {
+    height: 550px;
   }
-  .basic li:nth-child(2):before {
-    background-image: url("../icon/apple-alt-solid.svg");
-    left: 36%;
-    width: 18px;
+  .promo_logo img {
+    width: 117px;
   }
-  .basic li:nth-child(3):before {
-    background-image: url("../icon/tshirt-solid.svg");
-    left: 48%;
+  .promo_logo_text {
+    font-size: 11px;
+  }
+  .promo_title {
+    font-size: 22px;
+  }
+  .promo_simple {
+    font-size: 18px;
+  }
+  .promo_big_title {
+    width: 334px;
+    height: 149px;
+  }
+
+  .mobile_clo {
+    width: 259px;
+    height: 234px;
+  }
+  .mobile_simple {
+    font-size: 22px;
+  }
+  .mobile_left img {
     width: 25px;
   }
-  .basic li:nth-child(4):before {
-    background-image: url("../icon/mobile-solid.svg");
-    width: 13px;
-    height: 21px;
-    left: 59%;
+  .mobile_rigt img {
+    width: 25px;
   }
-  .basic li:nth-child(5):before {
-    background-image: url("../icon/sign-in-alt-solid.svg");
-    right: 27%;
+
+  .promo_section .basic_product {
+    width: 259px;
+    height: 234px;
+  }
+  .promo_section .basic_product:hover table {
+    height: 80px;
+    border-radius: 0;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+  }
+
+  .global_items_item img {
+    width: 51%;
+    height: 271px;
+  }
+  .global_simple {
+    width: 432px;
+    height: 327px;
+  }
+  .global_btn {
+    width: 116px;
+    height: 34px;
   }
 }
 
