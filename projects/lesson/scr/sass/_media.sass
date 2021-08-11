@@ -1,4 +1,4 @@
-@media  (max-width: 1200px)
+@media  (max-width: 991px)
   .basic
     display: flex
     justify-content: space-evenly
@@ -12,31 +12,143 @@
       a
         text-decoration: none
         color: #00d0ff
-    li:before
-      content: ""
-      position: absolute
-    li:nth-child(1)
-      &:before
-        left: 25%
-        width: 15px
-        height: 14px
-    li:nth-child(2)
-      &:before
-        left: 36%
-        width: 11px
-        height: 12px
-    li:nth-child(3)
-      &:before
-        left: 48%
-        width: 15px
-        height: 14px
-    li:nth-child(4)
-      &:before
-        width: 9px
-        height: 14px
-        left: 59%
-    li:nth-child(5)
-      &:before
-        right: 27%
-        width: 15px
-        height: 14px
+      img
+        width: 19px
+        height: 18px
+  .promo
+    &_div
+      height: 494px
+    &_logo
+      img
+        width: 117px
+      &_text
+        font-size: 11px
+    &_title
+      font-size: 22px
+    &_simple
+      font-size: 18px
+    &_big_title
+      width: 334px
+      height: 149px
+  .mobile
+    &_clo
+      width: 181px
+      height: 221px
+    &_simple
+      font-size: 22px
+    &_left
+      img
+        width: 22px
+    &_right
+      img
+        width: 22px
+    &_btn
+      height: 29px
+      box-shadow: 5px 3px 1px 0
+  .promo_section
+    .basic_product
+      width: 246px
+      height: 223px
+      &:hover table
+        height: 80px
+        border-radius: 0
+        border-top-right-radius: 14px
+        border-top-left-radius: 14px
+  .global
+    .col-md
+      display: none
+    &_items
+      &_item
+        img
+          display: none
+    &_simple
+      width: 432px
+      height: 327px
+    &_btn
+      width: 116px
+      height: 34px
+  .footer
+    &_li
+      ul
+        font-size: 13px
+    &_img
+      img
+        width: 27px
+        height: 29px
+@media (max-width: 767px)
+  .basic
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    height: 60px
+    li
+      color: #00d0ff
+      cursor: pointer
+      font-size: 15px
+      list-style: none
+      a
+        text-decoration: none
+        color: #00d0ff
+      img
+        width: 19px
+        height: 18px
+  .promo
+    &_div
+      height: 494px
+    &_logo
+      img
+        width: 117px
+      &_text
+        font-size: 11px
+    &_title
+      font-size: 22px
+    &_simple
+      font-size: 18px
+    &_big_title
+      width: 334px
+      height: 149px
+  .mobile
+    &_clo
+      width: 181px
+      height: 221px
+    &_simple
+      font-size: 22px
+    &_left
+      img
+        width: 22px
+    &_right
+      img
+        width: 22px
+    &_btn
+      height: 29px
+      box-shadow: 5px 3px 1px 0
+  .promo_section
+    .basic_product
+      width: 246px
+      height: 223px
+      &:hover table
+        height: 80px
+        border-radius: 0
+        border-top-right-radius: 14px
+        border-top-left-radius: 14px
+  .global
+    .col-md
+      display: none
+    &_items
+      &_item
+        img
+          display: none
+    &_simple
+      width: 432px
+      height: 327px
+    &_btn
+      width: 116px
+      height: 34px
+  .footer
+    &_li
+      ul
+        font-size: 13px
+    &_img
+      img
+        width: 27px
+        height: 29px

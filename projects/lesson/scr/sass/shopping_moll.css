@@ -33,36 +33,11 @@ header .basic li {
 header .basic li a {
   text-decoration: none;
   color: #00d0ff;
+  padding: 5px;
 }
-header .basic li:before {
-  content: "";
-  position: absolute;
+header .basic li img {
   width: 20px;
   height: 20px;
-}
-header .basic li:nth-child(1):before {
-  background-image: url("../icon/home-solid.svg");
-  left: 19%;
-}
-header .basic li:nth-child(2):before {
-  background-image: url("../icon/apple-alt-solid.svg");
-  left: 32%;
-  width: 18px;
-}
-header .basic li:nth-child(3):before {
-  background-image: url("../icon/tshirt-solid.svg");
-  left: 46%;
-  width: 25px;
-}
-header .basic li:nth-child(4):before {
-  background-image: url("../icon/mobile-solid.svg");
-  width: 13px;
-  height: 21px;
-  left: 61%;
-}
-header .basic li:nth-child(5):before {
-  background-image: url("../icon/sign-in-alt-solid.svg");
-  right: 22%;
 }
 
 .promo {
@@ -442,7 +417,6 @@ header .basic li:nth-child(5):before {
 
 .footer {
   background-color: #000000c7;
-  height: 120px;
 }
 .footer .basic_footer {
   display: flex;
@@ -511,7 +485,7 @@ header .basic li:nth-child(5):before {
   color: #14c6d7;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
   .basic {
     display: flex;
     justify-content: space-evenly;
@@ -528,34 +502,175 @@ header .basic li:nth-child(5):before {
     text-decoration: none;
     color: #00d0ff;
   }
-  .basic li:before {
-    content: "";
-    position: absolute;
+  .basic li img {
+    width: 19px;
+    height: 18px;
   }
-  .basic li:nth-child(1):before {
-    left: 25%;
-    width: 15px;
-    height: 14px;
+
+  .promo_div {
+    height: 494px;
   }
-  .basic li:nth-child(2):before {
-    left: 36%;
-    width: 11px;
-    height: 12px;
+  .promo_logo img {
+    width: 117px;
   }
-  .basic li:nth-child(3):before {
-    left: 48%;
-    width: 15px;
-    height: 14px;
+  .promo_logo_text {
+    font-size: 11px;
   }
-  .basic li:nth-child(4):before {
-    width: 9px;
-    height: 14px;
-    left: 59%;
+  .promo_title {
+    font-size: 22px;
   }
-  .basic li:nth-child(5):before {
-    right: 27%;
-    width: 15px;
-    height: 14px;
+  .promo_simple {
+    font-size: 18px;
+  }
+  .promo_big_title {
+    width: 334px;
+    height: 149px;
+  }
+
+  .mobile_clo {
+    width: 181px;
+    height: 221px;
+  }
+  .mobile_simple {
+    font-size: 22px;
+  }
+  .mobile_left img {
+    width: 22px;
+  }
+  .mobile_right img {
+    width: 22px;
+  }
+  .mobile_btn {
+    height: 29px;
+    box-shadow: 5px 3px 1px 0;
+  }
+
+  .promo_section .basic_product {
+    width: 246px;
+    height: 223px;
+  }
+  .promo_section .basic_product:hover table {
+    height: 80px;
+    border-radius: 0;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+  }
+
+  .global .col-md {
+    display: none;
+  }
+  .global_items_item img {
+    display: none;
+  }
+  .global_simple {
+    width: 432px;
+    height: 327px;
+  }
+  .global_btn {
+    width: 116px;
+    height: 34px;
+  }
+
+  .footer_li ul {
+    font-size: 13px;
+  }
+  .footer_img img {
+    width: 27px;
+    height: 29px;
+  }
+}
+@media (max-width: 767px) {
+  .basic {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+  }
+  .basic li {
+    color: #00d0ff;
+    cursor: pointer;
+    font-size: 15px;
+    list-style: none;
+  }
+  .basic li a {
+    text-decoration: none;
+    color: #00d0ff;
+  }
+  .basic li img {
+    width: 19px;
+    height: 18px;
+  }
+
+  .promo_div {
+    height: 494px;
+  }
+  .promo_logo img {
+    width: 117px;
+  }
+  .promo_logo_text {
+    font-size: 11px;
+  }
+  .promo_title {
+    font-size: 22px;
+  }
+  .promo_simple {
+    font-size: 18px;
+  }
+  .promo_big_title {
+    width: 334px;
+    height: 149px;
+  }
+
+  .mobile_clo {
+    width: 181px;
+    height: 221px;
+  }
+  .mobile_simple {
+    font-size: 22px;
+  }
+  .mobile_left img {
+    width: 22px;
+  }
+  .mobile_right img {
+    width: 22px;
+  }
+  .mobile_btn {
+    height: 29px;
+    box-shadow: 5px 3px 1px 0;
+  }
+
+  .promo_section .basic_product {
+    width: 246px;
+    height: 223px;
+  }
+  .promo_section .basic_product:hover table {
+    height: 80px;
+    border-radius: 0;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+  }
+
+  .global .col-md {
+    display: none;
+  }
+  .global_items_item img {
+    display: none;
+  }
+  .global_simple {
+    width: 432px;
+    height: 327px;
+  }
+  .global_btn {
+    width: 116px;
+    height: 34px;
+  }
+
+  .footer_li ul {
+    font-size: 13px;
+  }
+  .footer_img img {
+    width: 27px;
+    height: 29px;
   }
 }
 
