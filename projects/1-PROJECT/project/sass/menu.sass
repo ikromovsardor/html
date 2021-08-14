@@ -1,0 +1,86 @@
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+.promo
+  &_basic
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+  &_global
+    position: relative
+    width: 350px
+    height: 234px
+    margin-top: 40px
+    border-radius: 5px
+    border: none
+    animation-name: text1
+    animation-duration: 5s
+    animation-iteration-count: infinite
+    box-shadow: 0 0 20px 10px black
+    &_subtitle
+      width: 257px
+      height: 102px
+      display: flex
+      position: absolute
+      left: 50px
+      border: 1px solid
+      top: -200%
+      transition: 1s all
+      justify-content: center
+      align-items: center
+      background-color: #3c7bea5c
+      border-radius: 13px
+      backdrop-filter: blur(3px)
+      animation-name: text
+      animation-duration: 5s
+      animation-iteration-count: infinite
+    &_title
+      margin-top: 20px
+      color: floralwhite
+      text-align: center
+      animation-name: text
+      animation-duration: 5s
+      animation-iteration-count: infinite
+    &_img
+      img
+        display: block
+        width: 100px
+        height: 100px
+        margin: 0 auto
+    &:hover .promo_global_subtitle
+      opacity: 1
+      transition: 2s
+      left: 50px
+      color: black
+      top: 20%
+    &_btn
+      width: 120px
+      height: 30px
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 0 auto
+      border: none
+      margin-top: 20px
+      border-radius: 5px
+      background-color: rgba(11, 96, 224, 0.85)
+      &:active
+        transform: scale(0.8)
+        background-color: greenyellow
+@keyframes text
+  0%
+    color: gold
+  25%
+    color: black
+  50%
+    color: #81c612
+  75%
+    color: white
+  100%
+    color: #ff0000
+@keyframes text1
+  0%
+    background-color: #00d8ff
+  100%
+    background-color: #00ffb9
